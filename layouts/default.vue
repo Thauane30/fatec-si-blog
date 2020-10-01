@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header />
     <nav
       class="navbar header has-shadow is-primary"
       role="navigation"
@@ -38,7 +39,12 @@
 </template>
 
 <script>
+import Header from '../components/Header'
+
 export default {
+  components: {
+    Header,
+  },
   data() {
     return {
       items: [
